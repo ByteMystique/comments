@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sample chat</title>
+    <title>Post and Comment Section</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="post">
-            <h2>Monkey spotted</h2>
-            <p>troll post</p>
+            <h2>Post Title</h2>
+            <p>This is an example of a post content. Users can comment below.</p>
+            <div class="upvote-section">
+                <button id="upvote-button">
+                    <span class="upvote-icon">▲</span> 
+                    <span id="upvote-count">0</span> Upvotes
+                </button>
+                <button id="downvote-button">
+                    <span class="downvote-icon">▼</span> 
+                    <span id="downvote-count">0</span> Downvotes
+                </button>
+            </div>
         </div>
 
         <div class="comment-section">
-            <h3>COMMENTS: </h3>
+            <h3>Comments</h3>
             <ul id="comment-list"></ul>
         </div>
 
         <div class="comment-form">
             <h4>Add a Comment</h4>
-            
-            <textarea id="comment-input" placeholder="WRITE UR COMMENT"></textarea>
-            <button id="submit-comment">POST!</button>
+            <textarea id="comment-input" placeholder="Write a comment..."></textarea>
+            <button id="submit-comment">Submit</button>
         </div>
     </div>
 
