@@ -7,7 +7,7 @@ document.getElementById('submit-comment').addEventListener('click', function() {
         newComment.textContent = commentInput.value;
 
         commentList.appendChild(newComment);
-        commentInput.value = ""; // Clear the input field
+        commentInput.value = ""; 
     } else {
         alert("Please write a comment before submitting.");
     }
